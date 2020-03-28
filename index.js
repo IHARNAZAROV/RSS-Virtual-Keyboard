@@ -193,11 +193,13 @@ class Keyboard {
           break;
 
         default: {
+          const a = key[0];
+          const b = key[1];
           let lenguageLetter;
           if (!this.properties.isRussian) {
-            ([lenguageLetter] = key);
+            (lenguageLetter = a);
           } else {
-            lenguageLetter = key[1];
+            lenguageLetter = b;
           }
 
           keyElement.textContent = lenguageLetter.toLowerCase();
