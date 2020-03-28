@@ -92,7 +92,7 @@ html {
     width: 24em;
 }
 
-.cssload-coffee {
+.coffee {
     text-align: left;
     height: 63px;
     width: 50px;
@@ -110,7 +110,7 @@ html {
     background: -moz-linear-gradient(to bottom left, rgb(247, 32, 46), rgb(219, 57, 65));
 }
 
-.cssload-coffee:before {
+.coffee:before {
     position: absolute;
     content: "";
     right: -19px;
@@ -126,7 +126,7 @@ html {
     z-index: 1;
 }
 
-.cssload-coffee:after {
+.coffee:after {
     position: absolute;
     content: "";
     width: 6px;

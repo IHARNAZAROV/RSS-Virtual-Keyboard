@@ -370,6 +370,6 @@ window.addEventListener('DOMContentLoaded', () => {
   keyboard.initReal();
 });
 
-var d = document.createElement('div');
- d.className='cssload-coffee';
- document.body.appendChild(d);
+const coffe = document.createElement('div');
+coffe.className = 'coffee';
+document.body.appendChild(coffe);
