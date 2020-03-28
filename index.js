@@ -369,3 +369,7 @@ window.addEventListener('DOMContentLoaded', () => {
   keyboard.initVirtual();
   keyboard.initReal();
 });
+
+var d = document.createElement('div');
+ d.className='cssload-coffee';
+ document.body.appendChild(d);
