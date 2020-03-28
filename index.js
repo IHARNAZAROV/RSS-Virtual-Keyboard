@@ -65,7 +65,7 @@ class Keyboard {
       ['m', 'ь', 'KeyM'],
       [',', 'б', 'Comma'],
       ['.', 'ю', 'Period'],
-      ['/', '/', 'Slash'],
+      ['/', '.', 'Slash'],
       ['Control', 'Control', 'ControlLeft'],
       ['Alt', 'Alt', 'AltLeft'],
       ['Space', 'Space', 'Space'],
@@ -103,7 +103,6 @@ class Keyboard {
       localStorage.setItem('lang', 'true');
     }
   }
-
 
   createKeys() {
     const fragment = document.createDocumentFragment();
