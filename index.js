@@ -195,7 +195,7 @@ class Keyboard {
         default: {
           let lenguageLetter;
           if (!this.properties.isRussian) {
-            lenguageLetter = key[0];
+            ([lenguageLetter] = key);
           } else {
             lenguageLetter = key[1];
           }

@@ -1,9 +1,23 @@
 @font-face {
     font-family: 'Literal';
     src: url('./assets/fonts/Literal.otf');
-             font-style: normal;
+    font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: #333;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .keyboard-input {
@@ -16,6 +30,7 @@
     font-size: 40px;
     resize: none;
     color: #1f1235;
+    background-color: grey;
 }
 
 .keyboard {
