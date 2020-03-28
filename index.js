@@ -104,6 +104,7 @@ class Keyboard {
     }
   }
 
+
   createKeys() {
     const fragment = document.createDocumentFragment();
 
