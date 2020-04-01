@@ -188,3 +188,13 @@ html {
         opacity: 0.25;
     }
 }
+
+.hint {
+    color: #d6b87c;
+    position: absolute;
+    top: 30em;
+    right: 27em;
+    font-family: 'Literal';
+    line-height: 1.2;
+    font-size: 20px;
+}

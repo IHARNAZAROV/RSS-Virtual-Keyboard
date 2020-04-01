@@ -74,6 +74,7 @@ class Keyboard {
     ];
   }
 
+
   // Create textarea
   initTextarea() {
     this.elements.textarea = document.createElement('textarea');
@@ -90,12 +91,12 @@ class Keyboard {
     this.elements.main.classList.add('keyboard');
     this.elements.keysContainer.classList.add('keyboard-keys');
     this.elements.keysContainer.appendChild(this.createKeys());
-
     this.elements.keys = this.elements.keysContainer.querySelectorAll('.keyboard-key');
 
     // Add to DOM
     this.elements.main.appendChild(this.elements.keysContainer);
     document.body.appendChild(this.elements.main);
+
     if (this.properties.isRussian === false) {
       localStorage.setItem('lang', 'false');
     }
@@ -103,7 +104,6 @@ class Keyboard {
       localStorage.setItem('lang', 'true');
     }
   }
-
 
   createKeys() {
     const fragment = document.createDocumentFragment();
@@ -368,8 +368,14 @@ window.addEventListener('DOMContentLoaded', () => {
   keyboard.initTextarea();
   keyboard.initVirtual();
   keyboard.initReal();
+
 });
 
 const coffe = document.createElement('div');
 coffe.className = 'coffee';
 document.body.appendChild(coffe);
+
+const hint = document.createElement('div');
+hint.className = 'hint';
+hint.innerText = 'Alt + Shift - change language';
+document.body.appendChild(hint);
