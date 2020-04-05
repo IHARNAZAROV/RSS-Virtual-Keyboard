@@ -368,7 +368,6 @@ window.addEventListener('DOMContentLoaded', () => {
   keyboard.initTextarea();
   keyboard.initVirtual();
   keyboard.initReal();
-
 });
 
 const coffe = document.createElement('div');

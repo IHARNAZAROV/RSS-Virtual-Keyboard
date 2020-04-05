@@ -7,7 +7,19 @@
 }
 
 body {
-    background-color: #333;
+    background-attachment: fixed;
+    background: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 100, color-stop(0%, #4e5a66), color-stop(40%, #343b43), color-stop(95%, #22272c), color-stop(100%, #22272c)), #22272c;
+    background: -webkit-radial-gradient(center top, farthest-side, #4e5a66, #343b43 40%, #22272c 95%, #22272c), #22272c;
+    background: -moz-radial-gradient(center top, farthest-side, #4e5a66, #343b43 40%, #22272c 95%, #22272c), #22272c;
+    background: -o-radial-gradient(center top, farthest-side, #4e5a66, #343b43 40%, #22272c 95%, #22272c), #22272c;
+    -pie-background: -pie-radial-gradient(unsupported), #22272c;
+    background: radial-gradient(center top, farthest-side, #4e5a66, #343b43 40%, #22272c 95%, #22272c), #22272c;
+    background: -ms-radial-gradient(center top, farthest-side, #4e5a66, #343b43 40%, #22272c 95%, #22272c), #22272c;
+    -pie-background: radial-gradient(center top, farthest-side, #4e5a66, #343b43 40%, #22272c 95%, #22272c);
+    position: relative;
+    background-size: 800px 200px;
+    background-position: center -50px;
+    background-repeat: no-repeat;
 }
 
 html {
@@ -197,4 +209,7 @@ html {
     font-family: 'Literal';
     line-height: 1.2;
     font-size: 20px;
+    text-align: center;
+	text-shadow: 0 0 2px #fff;
+
 }
