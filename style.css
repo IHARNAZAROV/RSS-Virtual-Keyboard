@@ -155,7 +155,6 @@ html {
     -moz-animation: cssload-steam 3.45s ease infinite;
 }
 
-
 @keyframes cssload-steam {
     100% {
         top: -50px;
