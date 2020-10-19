@@ -359,22 +359,46 @@ class Keyboard {
 const keyboard = new Keyboard();
 
 window.addEventListener('DOMContentLoaded', () => {
-  if (localStorage.getItem('lang') === 'false') {
-    keyboard.properties.isRussian = false;
-  }
-  if (localStorage.getItem('lang') === 'true') {
-    keyboard.properties.isRussian = true;
-  }
+  // if (localStorage.getItem('lang') === 'false') {
+  //   keyboard.properties.isRussian = false;
+  // }
+  // if (localStorage.getItem('lang') === 'true') {
+  //   keyboard.properties.isRussian = true;
+  // }
   keyboard.initTextarea();
   keyboard.initVirtual();
   keyboard.initReal();
+
+  const button = document.createElement('div');
+  button.className = 'toggle-keyboard';
+  button.innerText = 'Close Keybord'
+  document.body.appendChild(button);
+
+  let openCloseKeyboardButton = document.querySelector('.toggle-keyboard');
+  openCloseKeyboardButton.addEventListener('click', openCloseKeyboard);
+  let keycontainer = document.querySelector('.keyboard-keys');
+  let openCloseButton = document.querySelector('.toggle-keyboard');
+  let isClosed = true;
+
+  function openCloseKeyboard() {
+    keycontainer.classList.toggle("open");
+    console.log(keycontainer.classList.contains("open"))
+    if (isClosed) {
+      openCloseButton.innerHTML = 'Open keyboard';
+      isClosed = false;
+    } else {
+      openCloseButton.innerHTML = 'Close keyboard';
+      isClosed = true;
+    }
+  }
+
+
+  const coffe = document.createElement('div');
+  coffe.className = 'coffee';
+  document.body.appendChild(coffe);
+
+  const hint = document.createElement('div');
+  hint.className = 'hint';
+  hint.innerText = 'Alt + Shift - change language';
+  document.body.appendChild(hint);
 });
-
-const coffe = document.createElement('div');
-coffe.className = 'coffee';
-document.body.appendChild(coffe);
-
-const hint = document.createElement('div');
-hint.className = 'hint';
-hint.innerText = 'Alt + Shift - change language';
-document.body.appendChild(hint);

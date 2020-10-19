@@ -54,8 +54,15 @@ html {
     box-shadow: 0px 5px 0px 0px darken(#d5d9dc, 50%);
 }
 
+.keyboard-keys.open {
+opacity: 0;
+    pointer-events: all;
+    transform: translate(0);
+  }
+
 .keyboard-keys {
     text-align: center;
+    opacity: 1;
 }
 
 .keyboard-key {
@@ -213,3 +220,17 @@ html {
 	text-shadow: 0 0 2px #fff;
 
 }
+.toggle-keyboard {
+    -webkit-box-sizing: border-box;
+    position: fixed;
+            box-sizing: border-box;
+    padding: 10px 30px;
+    width: 150px;
+    color: #d6b87c;
+    outline: 2px solid black;
+    cursor: pointer;
+    font-family: 'Literal';
+margin-left: 1%;
+border-radius: 10%;
+  }
+  
